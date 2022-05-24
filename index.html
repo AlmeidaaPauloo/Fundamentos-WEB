@@ -1,46 +1,74 @@
-<!DOCTYPE html> <!-- // aqui diz para o navegador qual é a versão do html utilizado -->
+<!DOCTYPE html> 
 <html lang="en"> 
-<head> <!--//contém metadados e informações para o doc -->
-    <!-- aqui estão os metadados que foi definido no head -->
+<head> 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head> <!--aqui foi definido o cabeçalho-->
-<body>  <!--aqui foi definido o corpo do site, pode ser entendido com a estrutura do site-->
-    
-    <!-- // aqui o ul define uma lista não ordenada, que não contem uma séries com numeros simplesmente contem uma série de "quadrados" ou "bolinhas"-->
-    <!--Já o li são os itens da lista definida anteriormente com o ul-->
-    <!--Já o TARGET="_blank" funciona para quando tem "a href" linkando algum site, o link não seja substitudio pela referencia do "a href", ou seja
-    você consegue clickar no link e ser direcionado com uma nova pagina no navegador-->
-    <ul>  
-        <li><a href="https://www.youtube.com/watch?v=QJ6j77GjdFQ" target="_blank">Se acalme</a></li> 
-        <li><a href="https://www.youtube.com/watch?v=OuCvUDVoX3M&t=682s" target="_blank">medite um pouco</a></li>
+    <title>Que viage é essa?!</title>
+    <link rel="stylesheet" href="assets/css/style.css"> 
+</head> 
+<body>       
+    <ul id="menu">  
+        <li>
+            <a href="https://www.youtube.com/watch?v=QJ6j77GjdFQ" target="_blank">Se acalme</a></li> 
+        <li>
+            <a href="https://www.youtube.com/watch?v=OuCvUDVoX3M&t=682s" target="_blank">medite um pouco</a></li>
     </ul>
 
-    <h1>Bem vindo ao meu teste de HTML</h1> <!--Define basicamente o tamanho da letra, de forma mais tecnica ele define os cabeçalhos HTML-->
+        <h1 class ="center">Bem vindo ao meu teste de HTML</h1> 
+        <div class="container">
+                <div class="p-32">                   
+                    <p class = "justify"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. At ullam tempora, sit eos numquam quam soluta natus voluptatem ut.
+                     Architecto eveniet facere excepturi natus! Nihil blanditiis ut totam id ab!
+                    </p>                       
+                </div>  
+                <div>   
+                    <img src="assets/IMGS/Desespero.jpeg" alt="Foto da cara de desespero de quem não sabe nada de front"> 
+                </div>     
 
-    <!--//Lorem - me ajuda a ter uma noção de como ficará o meu texto dentro do site-->
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At ullam tempora, sit eos numquam quam soluta natus voluptatem ut. Architecto eveniet facere excepturi natus! Nihil blanditiis ut totam id ab!
+                <div>
+                <h2 class="center">Video usado enquanto aprendo Front-end</h2>
+                <div>
 
-    </p><!--a tag "P" define um paragrafo, nesse caso, está sendo fechado o paragrafo -  podendo ser identificado esse fechamento com a barra "/"-->
+                <div class="container mb-50">
+                    <iframe
+                        width="560"
+                        height="315" 
+                        src="https://www.youtube.com/embed/pWjmpSD-ph0?start=60" 
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write;
+                        encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                                   
+        </div>
+        <li class="center"><a href="https://shorturl.ae/iCXKG" target="_blank">Que tal um massageador?</a></li>
+        <footer>
 
-    <!--A tag "IMG" já diz por si só, ela representa uma imagem-->
-    <!--"SRC" ela representa o diretório de onde tal imagem foi retirada-->
-    <!--"ALT" quando tal imagem não estiver disponível no servidor, isso faz com que apareça alguma mensagem dizendo o que aquela imagem representava
-    também pode ser usado para fazer algumas adaptações dentro do site, como colocar "para cego ver" e entre outras funcionalidades-->
-    <img src="assets/IMG/Desespero.jpeg" alt="Foto da cara de desespero de quem não sabe nada de front"> 
-    <h2>Video usado enquanto aprendo Front-end</h2>
-    <iframe
-     width="560"
-     height="315" 
-     src="https://www.youtube.com/embed/pWjmpSD-ph0?start=60" 
-     title="YouTube video player" 
-     frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-     encrypted-media; gyroscope; picture-in-picture" 
-     allowfullscreen></iframe>
+            <div class="container">
+               <a href="https://www.facebook.com/paulo.almeida.50364" target="_blank">
+                  <img class="tm-social p-30" src="assets/IMGS/facebook.jpeg" alt="Facebook">
+               </a>
+               
+               <a href="https://www.linkedin.com/in/almeidaapauloo/" target="_blank">
+                  <img class="tm-social p-30" src="assets/IMGS/linkedin.png" alt="Linkedin">
+               </a>
+               
+               <a href="https://www.instagram.com/almeidaa_pauloo/" target="_blank">
+                  <img class="tm-social p-30" src="assets/IMGS/instagram.png" alt="Intagram">
+               </a>
 
-    <li><a href="https://shorturl.ae/iCXKG" target="_blank">Que tal um massageador?</a></li>
+               <a href="https://github.com/AlmeidaaPauloo" target="_blank">
+                <img class="tm-social p-30" src="assets/IMGS/github.png" alt="GitHub">
+             </a>
+               
+            </div>
+      
+            <p class="center">
+               Todos os direitos reservados: Paulo Almeida &copy
+            </p> 
+         </footer>
 
-</body>
+    </body>
 </html>
